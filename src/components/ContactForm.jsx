@@ -57,23 +57,23 @@ const ContactForm = () => {
     return (
       <form onSubmit={handleSubmit} method='POST'>
           <div>
-              <label htmlFor="firstName">First Name:</label>
+              <label htmlFor="enquiry">Yor Enquiry:</label>
               <input
                 type="text"
-                name='firstName'
-                onChange={(event) => setFirstName(event.target.value)}
-                value={firstName}
+                name='enquiry'
+                onChange={(event) => setEnquiry(event.target.value)}
+                value={enquiry}
                 required
               />
           </div>
 
             <div>
-              <label htmlFor="firstName">Your Phone:</label>
+              <label htmlFor="phone">Your Phone:</label>
               <input
-                type="text"
-                name='firstName'
-                onChange={(event) => setFirstName(event.target.value)}
-                value={firstName}
+                type="number"
+                name='phone'
+                onChange={(event) => setPhone(event.target.value)}
+                value={phone}
                 required
               />
           </div>
